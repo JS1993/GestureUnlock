@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khB-SP-bUC" customClass="UnlockView">
+                                <rect key="frame" x="0.0" y="153" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Jo8-xU-vNR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jo8-xU-vNR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="22w-O2-oZv"/>
+                            <constraint firstItem="Jo8-xU-vNR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4kh-qR-a5n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jo8-xU-vNR" secondAttribute="bottom" id="9kN-tg-qMi"/>
+                            <constraint firstItem="khB-SP-bUC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L7g-br-Ull"/>
+                            <constraint firstItem="khB-SP-bUC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="133" id="TId-dK-kNa"/>
+                            <constraint firstAttribute="trailing" secondItem="Jo8-xU-vNR" secondAttribute="trailing" id="eSW-2Y-Ccu"/>
+                            <constraint firstAttribute="trailing" secondItem="khB-SP-bUC" secondAttribute="trailing" id="hcm-BA-iFm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="khB-SP-bUC" secondAttribute="bottom" constant="95" id="sj7-FF-Kp6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg" width="640" height="1008"/>
+    </resources>
+</document>
